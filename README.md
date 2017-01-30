@@ -1,2 +1,1 @@
-# home
 # openseastead.github.io
