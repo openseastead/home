@@ -1,0 +1,151 @@
+/*
+Main css
+*/
+.featured_image {/*grid section class*/
+	width: 100%;
+}
+
+/****************
+Gallery
+****************/
+.lg-item:hover {
+  cursor: zoom-in;
+}
+.lg-sub-html h4 {
+  color: #eee;
+}
+
+
+/****************
+Overlay style
+***************/
+.thumbnail-body .apfl-button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*****************
+pagnation
+****************/
+.apfl_hover-effect .row.products,
+.apfl_overlay .row.products {
+margin-top:20px;
+}
+.row.list-grid:not(.container) {
+  margin-bottom: 20px;
+}
+.pagination a, .pagination span {
+    background-color: rgba(175, 175, 175, 0.5);
+}
+.pagination li {
+    border-right: 1px solid rgba(238, 238, 238, 0);
+}
+/*****************
+apfl section title
+****************/
+
+/*****************
+span 6 images
+****************/
+.span-6 .thumbnail-media img {
+  width: 100%;
+}
+
+/*****************
+Responsive display
+****************/
+@media only screen and (max-width: 768px) and (min-width: 481px){
+.apfl-overlay .excerpt,
+.apfl-overlay footer.meta-info,
+.apfl_hover-effect .excerpt,
+.apfl_hover-effect footer.meta-info {
+}
+.apfl_overlay article.apfl-overlay-1 .thumbnail-body .apfl-overlay .heading {
+    background: inherit;
+}
+article.apfl-overlay-1 .article-title .heading:after {
+    content: "";
+    width: 50%;
+    /*border-top: 1px solid rgba(255,255,255,0.5);*/
+    position: relative;
+    display: block;
+    /*margin: 10px auto 0px;*/
+}
+}
+
+
+@media only screen and (max-width: 480px){
+  .column.span-6,
+  .column.span-4,
+  .column.span-3,
+  .column.span-2,
+  .column-flush.span-6,
+  .column-flush.span-4,
+  .column-flush.span-3,
+  .column-flush.span-2 {
+    width: 100%;
+  }
+}
+
+
+/********************
+span-2 retouch from layers responsive.css(0920 test)
+*******************/
+.apfl-overlay-grid .column.span-2,
+.apfl-hover-effect-grid .column.span-2 {
+    margin-bottom: 0.5%;
+}
+@media only screen and (max-width: 480px) {
+  .apfl-overlay-grid .column.span-2,
+  .apfl-hover-effect-grid .column.span-2 {
+      margin-bottom: 0.5em;
+  }
+}
+@media only screen and (min-width: 481px) {
+  .apfl-overlay-grid .column.span-2,
+  .apfl-hover-effect-grid .column.span-2 {
+      margin-right: 0.56%;
+      margin-left: 0;/*update for layers WP 1.5 for the 10px padding issue in our masonry*/
+  }
+}
+@media only screen and (min-width: 769px) {
+  .apfl-overlay-grid .span-2,
+  .apfl-hover-effect-grid .span-2 {
+      width: 16.2%;
+  }
+  .apfl-overlay-grid.row .span-2:nth-child(6n+6),
+  .apfl-hover-effect-grid .span-2:nth-child(6n+6) {
+      margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+article.apfl-hover-effect-1 .thumbnail-body .excerpt,
+article.apfl-hover-effect-2 .thumbnail-body .excerpt,
+article.apfl-hover-effect-3 .thumbnail-body .excerpt,
+article.apfl-hover-effect-4 .thumbnail-body .excerpt/*,
+article.apfl-hover-effect-1 .thumbnail-body .meta-info,
+article.apfl-hover-effect-2 .thumbnail-body .meta-info,
+article.apfl-hover-effect-3 .thumbnail-body .meta-info,
+article.apfl-hover-effect-4 .thumbnail-body .meta-info*/ {
+   padding: 0;
+}
+article.thumbnail .thumbnail-body p,
+article.with-overlay .thumbnail-body .excerpt {
+    margin: 0px 0 0;
+    padding: 0;
+}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .apfl-overlay-grid .column.span-2,
+  .apfl-hover-effect-grid .column.span-2 {
+      width: 33%;
+      margin-right: 0.5%;
+  }
+  .apfl-overlay-grid .column.span-2:nth-child(3n+3),
+  .apfl-hover-effect-grid .column.span-2:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
